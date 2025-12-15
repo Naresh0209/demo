@@ -1,9 +1,11 @@
-FROM python:3.12-slim
+FROM python:3.14-slim
 
-WORKDIR /dev
+WORKDIR /app
 
 COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD ["python3", "dev.py"]
+EXPOSE 5000
+
+CMD ["python3", "app.py"]
