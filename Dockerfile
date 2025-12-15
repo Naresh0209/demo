@@ -6,4 +6,4 @@ copy . .
 
 run pip install-r requirements.txt
 
-cmd ['python3', 'dev.py]
+cmd ['python3', 'dev.py']
