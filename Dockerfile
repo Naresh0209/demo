@@ -1,9 +1,9 @@
-from python:3.12 slim
+FROM python:3.12 slim
 
-workdar /dev
+WORKDIR /dev
 
-copy . .
+COPY . .
 
-run pip install-r requirements.txt
+RUN pip install-r requirements.txt
 
-cmd ['python3', 'dev.py']
+CMD ['python3', 'dev.py']
